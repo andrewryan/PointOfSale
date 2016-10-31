@@ -6,8 +6,14 @@ function addItem()
   newItem = document.getElementById("price").value;
   //IF newItem is not a number
   // THEN show an alert: "Enter price as a number"
+  if(isNaN(newItem) == true)
+  {
+    alert("Enter price as a number");
+  }
   //OTHERWISE,
   // update newItem to its value cast as a number
+  //newItem = newItem.toFixed(2);
+  //console
   // update runningTotal to be its value plus newItem
   // create a variable called dollars
   // call asCurrency() by with the value of runningTotal and assign the return value to dollars
