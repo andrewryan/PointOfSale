@@ -25,7 +25,6 @@ function addItem()
     var dollars = asCurrency(runningTotal);
     document.getElementById("subtotal").innerHTML= dollars;
     document.getElementById("price").value= "";
-    console.log(runningTotal, dollars);
     setCookie("preTax", runningTotal, 1);
   }
 }
@@ -56,5 +55,5 @@ function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return "";
+    return runningTotal;
 }
