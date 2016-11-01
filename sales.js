@@ -26,7 +26,7 @@ function addItem()
     document.getElementById("subtotal").innerHTML= dollars;
     document.getElementById("price").value= "";
     console.log(runningTotal, dollars);
-    setCookie("preTax", runningTotal);
+    setCookie("preTax", runningTotal, 1);
   }
 }
 
