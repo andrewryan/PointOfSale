@@ -65,17 +65,15 @@ function getCookie(cname) {
 //Create a third variable called receiptTotal and assign it to the sum of the subtotal plus the taxes (which you just calculated)
 //Once you have calculated those values, have your function update the h2 tags with the respective id: sub, tax, and tot
 //Make sure the values are output as currency (e.g. with $xx.xx format) and not just as numbers.
-
+var receiptSubtotal = 0;
 function calculateReceipt()
 {
-  var receiptSubtotal = 0;
-  receiptSubtotal = Number(receiptSubtotal);
   receiptSubtotal = getCookie("preTax");
+  receiptSubtotal = Number(receiptSubtotal);
   var receiptTax = receiptSubtotal * 0.075;
   var receiptTotal = receiptSubtotal + receiptTax;
-  document.getElementById("sub").innerHTML= receiptSubtotal;
-  document.getElementById("tax").innerHTML= receiptTax;
-  document.getElementById("tot").innerHTML= receiptTotal;
-  console.log("inside calculateReceipt");
-  console.log(receiptSubtotal + " subtotal");
+  //receiptTotal = asCurrency(receiptTotal);
+  document.getElementById("sub").innerHTML= asCurrency(receiptSubtotal);
+  document.getElementById("tax").innerHTML= asCurrency(receiptTax);
+  document.getElementById("tot").innerHTML= asCurrency(receiptTotal);
 }
