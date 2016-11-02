@@ -73,6 +73,8 @@ function calculateReceipt()
   var receiptTax = receiptSubtotal * 0.075;
   var receiptTotal = receiptSubtotal + receiptTax;
   document.getElementById("sub").innerHTML= receiptSubtotal;
-  document.getElementById("tax").value= receiptTax;
-  document.getElementById("tot").value= receiptTotal;
+  document.getElementById("tax").innerHTML= receiptTax;
+  document.getElementById("tot").innerHTML= receiptTotal;
+  console.log("inside calculateReceipt");
+  console.log(receiptSubtotal + " subtotal");
 }
