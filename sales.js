@@ -58,13 +58,13 @@ function getCookie(cname) {
     return "";
 }
 
-First, create a new function in sales.js called calculateReceipt() but leave it empty for now.
-Then, open receipt.html and locate the body element. Add an onload event that calls calculateReceipt()
-Now, within your new function, get the preTax cookie and assign it to a variable called receiptSubtotal. Make sure to cast it to a number
-Create another variable called receiptTax. Assign it the value of receiptSubtotal multiplied by 0.075 (in other words, calculate 7.5% of preTax).
-Create a third variable called receiptTotal and assign it to the sum of the subtotal plus the taxes (which you just calculated)
-Once you have calculated those values, have your function update the h2 tags with the respective id: sub, tax, and tot
-Make sure the values are output as currency (e.g. with $xx.xx format) and not just as numbers.
+//First, create a new function in sales.js called calculateReceipt() but leave it empty for now.
+//Then, open receipt.html and locate the body element. Add an onload event that calls calculateReceipt()
+//Now, within your new function, get the preTax cookie and assign it to a variable called receiptSubtotal. Make sure to cast it to a number
+//Create another variable called receiptTax. Assign it the value of receiptSubtotal multiplied by 0.075 (in other words, calculate 7.5% of preTax).
+//Create a third variable called receiptTotal and assign it to the sum of the subtotal plus the taxes (which you just calculated)
+//Once you have calculated those values, have your function update the h2 tags with the respective id: sub, tax, and tot
+//Make sure the values are output as currency (e.g. with $xx.xx format) and not just as numbers.
 
 function calculateReceipt()
 {
