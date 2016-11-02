@@ -68,7 +68,8 @@ function getCookie(cname) {
 
 function calculateReceipt()
 {
-  var receiptSubtotal = Number(receiptSubtotal);
+  var receiptSubtotal = 0;
+  receiptSubtotal = Number(receiptSubtotal);
   receiptSubtotal = getCookie("preTax");
   var receiptTax = receiptSubtotal * 0.075;
   var receiptTotal = receiptSubtotal + receiptTax;
